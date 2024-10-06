@@ -1,0 +1,23 @@
+.btn-create-asset {
+  background-color: var(--primary-color);
+  box-shadow: none;
+  border-radius: 4px;
+}
+
+.header-homepage {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 820px) {
+  .header-homepage {
+    flex-direction: column-reverse;
+  }
+
+  .btn-create-asset {
+    width: 180px;
+    margin-bottom: 1rem;
+  }
+}

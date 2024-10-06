@@ -1,0 +1,53 @@
+<section class="section-create-asset">
+  <form class="form-create-asset">
+    <mat-form-field appearance="outline" class="mat-form-field">
+      <mat-label>Código</mat-label>
+      <input
+        matInput
+        name="selectedFilterCode"
+        maxlength="12"
+        [(ngModel)]="selectedFilterCode"
+        required
+        [readonly]="!isEdited"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="mat-form-field">
+      <mat-label>Nome</mat-label>
+      <input
+        matInput
+        name="name"
+        maxlength="200"
+        [(ngModel)]="selectedName"
+        required
+      />
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Categoria</mat-label>
+      <mat-select [(ngModel)]="selectedFilterCategory" name="category" required>
+        <mat-option *ngFor="let category of categories" [value]="category.name">
+          {{ category.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+ 
+    <div class="filter-actions">
+      <button mat-fab extended (click)="onSave()" class="btn-save">
+        <mat-icon>save</mat-icon>
+        {{ isEdited ? "Salvar" : "Atualizar" }}
+      </button>
+
+      <button
+        mat-fab
+        extended
+        (click)="deleteConfirm()"
+        *ngIf="!isEdited"
+        class="btn-delete"
+      >
+        <mat-icon>delete</mat-icon>
+        Excluir
+      </button>
+    </div>
+  </form>
+</section>

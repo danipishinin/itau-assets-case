@@ -1,0 +1,52 @@
+.section-create-asset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form-create-asset {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  min-width: 50%;
+}
+
+.btn-save {
+  background-color: var(--primary-color);
+  box-shadow: none;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.btn-delete {
+  background-color: var(--feedback-warning-color);
+  box-shadow: none;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.filter-actions {
+  justify-content: space-between;
+  display: flex;
+}
+
+mat-label {
+  color: var(--neutral-medium-color)
+}
+
+
+.mat-form-field mat-label {
+  color: var(--neutral-medium-color);
+
+}
+
+.mat-form-field:hover .mat-form-field-label {
+  color: var(--neutral-medium-color);
+}
+
+
+.mat-mdc-select-value-text {
+  color: var(--neutral-medium-color);
+}

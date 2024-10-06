@@ -1,0 +1,29 @@
+<form class="filter">
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Código</mat-label>
+    <input
+      matInput
+      name="selectedFilterCode"
+      maxlength="12"
+      [(ngModel)]="selectedFilterCode"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="mat-form" appearance="outline">
+    <mat-label>Categoria</mat-label>
+    <mat-select [(ngModel)]="selectedFilterCategory" name="category">
+      <mat-option *ngFor="let category of categories" [value]="category.name">
+        {{ category.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="filter-actions">
+    <button mat-fab extended (click)="onFilterButtonClick()" class="btn-search">
+      <mat-icon>search</mat-icon>
+    </button>
+    <button mat-fab extended class="clean-button" (click)="clearFilters()">
+      Limpar
+    </button>
+  </div>
+</form>

@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+ 
+}
+
+.mat-elevation-z8 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  box-shadow: none;
+}
+
+p {
+  line-height: 130%;
+  color: var(--neutral-dark-color);
+}
+
+td {
+  background-color: var(--neutral-lighter-color);
+  color: var(--neutral-dark-color);
+}
+
+.mat-mdc-header-row {
+  background-color: var(--neutral-dark-color);
+}
+
+

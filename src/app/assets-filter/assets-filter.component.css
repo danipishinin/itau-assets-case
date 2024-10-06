@@ -1,0 +1,68 @@
+.clean-button {
+  background-color: var(--neutral-lighter-color);
+  color: var(--primary-color);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.clean-button:hover {
+  background-color: var(--primary-color);
+  color: var(--neutral-lighter-color);
+  box-shadow: none;
+}
+
+.filter-actions {
+  align-items: center;
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+::ng-deep button[mat-fab][disabled] {
+  background-color: var(--neutral-medium-color);
+  color: var(--neutral-light-color);
+}
+
+.mat-form {
+  padding-right: 2rem;
+}
+
+.btn-search {
+  background-color: var(--neutral-dark-color);
+  box-shadow: none;
+  border-radius: 4px;
+}
+
+.mat-mdc-extended-fab .mdc-button__label+.mat-icon, [dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.material-icons, .mat-mdc-extended-fab>.mat-icon, .mat-mdc-extended-fab>.material-icons {
+  margin: 0px;
+}
+
+@media (max-width: 480px) {
+  .filter {
+    flex-direction: column-reverse;
+  }
+
+  .mat-form {
+    width: 100%;
+  }
+
+  .btn-search, .clean-button {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+}
+
+mat-label {
+  color: var(--neutral-medium-color)
+}
+
+.mat-mdc-select-value-text {
+  color: var(--neutral-medium-color);
+}

@@ -1,0 +1,24 @@
+
+:root {
+  --primary-color: #ec7000;
+  --feedback-warning-color: #db5666;
+  --neutral-light-color: #ebebeb;
+  --neutral-medium-color: #a5a5a5;
+  --neutral-dark-color: #161f27;
+  --neutral-lighter-color: #fbfbfb;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0 auto;
+}
+
+button {
+  background-color: var(--primary-color);
+}
+
+

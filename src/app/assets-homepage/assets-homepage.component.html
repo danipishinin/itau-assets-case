@@ -1,0 +1,17 @@
+<main>
+  <div class="header-homepage">
+    <app-assets-filter></app-assets-filter>
+    <button
+      mat-fab
+      extended
+      [routerLink]="['/create']"
+      class="btn-create-asset"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+    >
+      <mat-icon>add</mat-icon>
+      Cadastrar ativo
+    </button>
+  </div>
+  <assets-table></assets-table>
+</main>

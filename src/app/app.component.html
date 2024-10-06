@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="title">
+    <img
+      fetchpriority="high"
+      src="https://fundos-itauasset.mz-customers.com/wp-content/themes/mziq_itau-asset/img/client/logo-footer-v2.svg"
+      alt="Itaú Asset"
+      width="100"
+    />
+    <p class="subtitle">{{renderTitle()}}</p>
+  </div>
+  <div class="btn-goback">
+    <button
+      mat-fab
+      extended
+      (click)="onGoBack()"
+      *ngIf="shouldShowGoBackButton()"
+      class="btn-goback"
+    >
+      VOLTAR
+    </button>
+  </div>
+</header>
+  <router-outlet></router-outlet>
