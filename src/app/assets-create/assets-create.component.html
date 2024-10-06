@@ -20,12 +20,13 @@
         maxlength="200"
         [(ngModel)]="selectedName"
         required
+        class="mat-select"
       />
     </mat-form-field>
     
     <mat-form-field appearance="outline">
       <mat-label>Categoria</mat-label>
-      <mat-select [(ngModel)]="selectedFilterCategory" name="category" required>
+      <mat-select [(ngModel)]="selectedFilterCategory" name="category" required class="mat-select">
         <mat-option *ngFor="let category of categories" [value]="category.name">
           {{ category.name }}
         </mat-option>

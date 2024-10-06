@@ -11,7 +11,7 @@
 
   <mat-form-field class="mat-form" appearance="outline">
     <mat-label>Categoria</mat-label>
-    <mat-select [(ngModel)]="selectedFilterCategory" name="category">
+    <mat-select [(ngModel)]="selectedFilterCategory" name="category" class="mat-select">
       <mat-option *ngFor="let category of categories" [value]="category.name">
         {{ category.name }}
       </mat-option>

@@ -66,3 +66,7 @@ mat-label {
 .mat-mdc-select-value-text {
   color: var(--neutral-medium-color);
 }
+
+.mat-select {
+  color: var(--neutral-dark-color);
+}
